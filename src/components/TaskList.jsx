@@ -5,7 +5,8 @@ export default function TaskList() {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8080/tasks')
+    // 📌 Cambiado a ruta relativa '/tasks' para consultar al servidor en producción
+    fetch('/tasks')
       .then((res) => res.json())
       .then((data) => setTasks(data))
       .catch((err) => console.error(err));
