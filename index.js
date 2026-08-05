@@ -36,13 +36,15 @@ const initDb = async () => {
 };
 initDb();
 
-// Usar el enrutador
+// Usar el enrutador del backend
 app.use('/', routes);
 
 // Servir cliente compilado en producción
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, 'dist')));
-  app.get('*', (req, res) => {
+  
+  // 📌 CORRECCIÓN: Cambiado '*' por '/*splat' para compatibilidad con Express 5
+  app.get('/*splat', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist', 'index.html'));
   });
 }
