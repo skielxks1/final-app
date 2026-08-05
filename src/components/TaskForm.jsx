@@ -8,7 +8,8 @@ export default function TaskForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:8080/tasks', {
+      // 📌 Cambiado a ruta relativa '/tasks' para que apunte al servidor de Render en producción
+      const res = await fetch('/tasks', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ titulo, descripcion })
