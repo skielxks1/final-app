@@ -19,7 +19,7 @@ export default function Dashboard() {
         <div className={styles.card}>
           <h3>🩺 Health Check</h3>
           <p>Verify backend availability.</p>
-          <a href="http://localhost:8080/health" target="_blank" rel="noreferrer" className={styles.link}>Check &rarr;</a>
+          <a href="/health" target="_blank" rel="noreferrer" className={styles.link}>Check &rarr;</a>
         </div>
       </div>
     </div>
