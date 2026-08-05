@@ -1,0 +1,5 @@
+/* src/components/TaskList.module.css */
+.container { max-width: 900px; margin: 3rem auto; color: #f8fafc; }
+.table { width: 100%; border-collapse: collapse; background: #1e293b; border-radius: 8px; overflow: hidden; }
+.table th, .table td { padding: 1rem; border-bottom: 1px solid #334155; text-align: left; }
+.table th { background: #0f172a; color: #38bdf8; }

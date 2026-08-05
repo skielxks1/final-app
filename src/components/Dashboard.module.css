@@ -1,0 +1,7 @@
+/* src/components/Dashboard.module.css */
+.container { max-width: 1000px; margin: 3rem auto; padding: 0 1rem; }
+.title { color: #f8fafc; margin-bottom: 2rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+.card { background: #1e293b; padding: 1.5rem; border-radius: 8px; color: #f8fafc; border: 1px solid #334155; }
+.card h3 { color: #38bdf8; margin-top: 0; }
+.link { color: #60a5fa; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 1rem; }
